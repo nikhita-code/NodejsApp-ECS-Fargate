@@ -47,6 +47,7 @@ jobs:
 
    - name: deploy ecs task-defination
      id: deploy
+     uses: aws-actions/amazon-ecs-deploy-task-definition@v1
      with: 
       task-defination: ${{ steps.task-defi.outputs.task-defination }}
       service: nodejsapp-service
