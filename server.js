@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello from Dockerized Node.js app 🚀");
+  res.send("Hello from Node.js app deploying using AWS ECS Farget Cluster!! Hello , Nikhita here:) ");
 });
 
 app.listen(PORT, () => {
